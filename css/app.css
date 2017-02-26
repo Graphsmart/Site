@@ -91,11 +91,12 @@ section {
 	height: 3px;
 	position: absolute;
 	top: 50px;
-	width: 1024px;
+	left: 120px;
+    right: 120px;
 }
 
 header {
-	background: url("/img/backg.webp") center no-repeat;
+	background: url("/img/backg.png") center no-repeat;
 	height: 284px;
 	display: flex;
 	flex-direction: row;
@@ -162,7 +163,7 @@ header {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	width: 100%;
-	padding: 20px 20px 0px 20px;
+	padding: 20px 0px 30px 0px;
 }
 .titleservices {
 	text-align: center;
@@ -175,8 +176,8 @@ header {
 	color: white;
 }
 .service {
-	margin: 40px;
-	max-width: 190px;
+	margin: 30px 30px 20px 30px;
+	max-width: 210px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -201,6 +202,7 @@ header {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 22px;
+	margin-top: 14px;
 }
 .desc {
 	font-size: 13px;
@@ -212,7 +214,7 @@ header {
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
-	padding: 40px 0 45px 0;
+	padding: 40px 0 45px 4px;
 }
 .titlework {
 	text-align: center;
@@ -225,10 +227,11 @@ header {
 	color: white;
 }
 .workimg {
-	width: 237px;
-	height: 242px;
+	width: 330px;
+	height: 220px;
 	padding: 5px;
 	position: relative;
+	outline: none;
 }
 .workimg span {
 	position: absolute;
@@ -244,8 +247,8 @@ header {
     filter: alpha(opacity=50);
 }
 .workimg img {
-	width: 237px;
-	height: 242px;
+	width: 330px;
+	height: 220px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -255,7 +258,7 @@ header {
 
 #contact_us {
 	border-top: solid 6px #FEC22E;
-	background: url("/img/backg2.webp") center no-repeat;
+	background: url("/img/backg2.png") center no-repeat;
 	color: #2B236E;
 }
 .titlecontact {
@@ -356,6 +359,31 @@ button {
 }
 
 
+/* ---- Gallery ---- */
 
+.image-source-link {
+	color: #98C3D1;
+}
 
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
 
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
