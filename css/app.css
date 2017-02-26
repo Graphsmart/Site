@@ -101,6 +101,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	position:relative;
 }
 
 #logo {
@@ -112,6 +113,14 @@ header {
 #logo img {
 	max-width: 60%;
    	height: auto;
+}
+.lang {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+.lang a {
+	color: #1C165C;
 }
 
 #about_us {
